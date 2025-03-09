@@ -1,0 +1,81 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc; /* Light background color */
+    color: #333; /* Dark text color for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Ensure content fills the screen */
+}
+
+/* Styling for the fetch button */
+#fetch-news {
+    padding: 10px 20px;
+    background-color: #4A90E2; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px; /* Top margin to separate from top of page */
+}
+
+#fetch-news:hover {
+    background-color: #357ABD; /* Darker blue on hover */
+}
+
+/* Container for the news cards */
+#news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px; /* Max width to center content */
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px; /* Space between button and news cards */
+}
+
+/* Style for each news card */
+.card {
+    background-color: white;
+    width: 100%;
+    max-width: 350px; /* Max card width */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Style for images inside news cards */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Add padding and spacing for card content */
+.card .content {
+    padding: 15px;
+}
+
+/* Styling for Read More button */
+.read-more-button {
+    text-decoration: none;
+    color: #4A90E2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.read-more-button:hover {
+    text-decoration: underline;
+}
+
